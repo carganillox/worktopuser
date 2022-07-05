@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  ~ Copyright (c) All rights reserved DrinkLink
+  -->
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/list_item"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:textAlignment="center"
+    android:background="@color/charcoal">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/category_height_64dp"
+        android:orientation="horizontal">
+
+        <FrameLayout
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="@dimen/category_height_64dp"
+            android:textAlignment="center"
+            android:gravity="center_vertical">
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/logo_drink_category"
+                android:layout_width="32dp"
+                android:layout_height="32dp"
+                android:layout_marginStart="@dimen/default_margin_2x"
+                android:layout_marginEnd="@dimen/default_margin"
+                android:layout_marginTop="@dimen/default_margin"
+                android:layout_marginBottom="@dimen/default_margin"
+                android:layout_gravity="center_vertical"
+                app:srcCompat="@drawable/ico_drinks_water"/>
+
+            <TextView
+                android:id="@+id/lbl_name"
+                android:layout_gravity="center_vertical|left"
+                android:layout_marginStart="@dimen/category_left_margin_64dp"
+                tools:text="Place name some vey long text that doesn't fit into  single line"
+                style="@style/list_item_text_view_style_18sp" />
+
+        </FrameLayout>
+
+        <RelativeLayout
+            android:id="@+id/add_button_container"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            tools:alpha="1"
+            android:alpha="1"
+            android:layout_gravity="center_vertical|right"
+            android:layout_marginEnd="@dimen/default_margin_2x">
+
+            <View android:id="@+id/animation_background"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_alignTop="@+id/btn_add_drinks"
+                android:layout_alignBottom="@+id/btn_add_drinks"
+                android:layout_alignStart="@+id/btn_add_drinks"
+                android:layout_alignEnd="@+id/btn_add_drinks"
+                tools:alpha="1"
+                android:alpha="1"
+                android:clickable="false"
+                android:focusable="false"
+                android:background="@drawable/gradient_corners_rounded_black"
+                />
+
+            <View android:id="@+id/animation_overlay"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_alignTop="@+id/btn_add_drinks"
+                android:layout_alignBottom="@+id/btn_add_drinks"
+                android:layout_alignStart="@+id/btn_add_drinks"
+                android:layout_alignEnd="@+id/btn_add_drinks"
+                tools:alpha="0"
+                android:alpha="1"
+                android:clickable="false"
+                android:focusable="false"
+                android:background="@drawable/gradient_corners_rounded"
+                />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/btn_add_drinks"
+                style="@style/button_border_style_bold"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/button_add_drink_height_32dp"
+                android:text="@string/btn_add_drink"/>
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+   <View style="@style/list_item_border_style"/>
+
+</LinearLayout>

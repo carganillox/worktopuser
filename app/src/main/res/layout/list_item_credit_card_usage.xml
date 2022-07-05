@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  ~ Copyright (c) All rights reserved DrinkLink
+  -->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:gravity="center_vertical"
+    android:layout_marginBottom="@dimen/default_margin"
+    android:orientation="horizontal">
+
+    <androidx.appcompat.widget.AppCompatCheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/check_box_option"
+        android:paddingBottom="@dimen/default_margin_half"
+        android:buttonTint="@color/white"
+        android:layout_marginLeft="@dimen/margin_negative_half"
+        style="@style/check_box_button_options"
+        tools:checked="true"
+        />
+
+<!--    android:button="@drawable/check_box_button_options" -->
+<!--    style="@style/check_box_button_options"-->
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/card_logo"
+            android:layout_width="@dimen/payment_image_64dp"
+            android:layout_height="@dimen/payment_image_40dp"
+            android:adjustViewBounds="true"
+            android:scaleType="fitCenter"
+            android:layout_marginLeft="@dimen/default_margin"
+            app:srcCompat="@drawable/ic_logo_dinners_clup"/>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/payment_method_margin_12dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/et_name_on_card"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/default_margin_4dp"
+                style="@style/list_item_description_white_text_view_style_14sp"
+                android:text="Petar Petrovic"/>
+
+            <TextView android:id="@+id/et_card_number"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                style="@style/list_item_text_view_style_18sp"
+                android:text="**** 5109  11/19"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tv_ccv_code"
+                style="@style/header_description_mango_tango_text_view_style_12sp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_marginStart="@dimen/margin_size_correction_2dp"
+                android:text="@string/credit_card_ccv_code"
+                android:visibility="gone"/>
+
+            <EditText
+                android:id="@+id/et_ccv_code"
+                style="@style/bottom_edit_text_style_20sp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:digits="123456789"
+                android:inputType="number"
+                android:maxLength="3"
+                android:backgroundTint="@color/lightcharcoal"
+                android:hint="@string/credit_card_ccv_code"
+                android:visibility="gone"
+                tools:text="@string/order_amount_format" />
+
+        </LinearLayout>
+
+</LinearLayout>

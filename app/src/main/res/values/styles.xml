@@ -1,0 +1,455 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <!--Theme.AppCompat.Light.DarkActionBar-->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="android:windowBackground">@drawable/bkg_default</item>
+        <item name="actionBarSize">48dp</item>
+        <item name="dl_background">@color/darkcharcoal</item>
+        <item name="dl_background_light">@color/charcoal</item>
+    </style>
+
+    <style name="SplashTheme" parent="AppTheme">
+        <item name="android:windowBackground">@drawable/bkg_splash</item>
+    </style>
+
+    <style name="CodeStatusTheme" parent="AppTheme">
+        <item name="android:windowBackground">@color/black</item>
+    </style>
+
+    <style name="SettingsTheme" parent="AppTheme">
+        <item name="android:windowBackground">@color/darkcharcoal</item>
+    </style>
+
+    <style name="EditText.CreditCard" parent="@android:style/Widget.EditText">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:capitalize">characters</item>
+        <item name="android:typeface">monospace</item>
+        <item name="android:textSize">18sp</item>
+        <item name="android:textColor">@color/colorPrimaryDark</item>
+        <item name="android:visibility">@integer/view_gone</item>
+        <item name="android:layout_margin">@dimen/default_margin</item>
+    </style>
+
+
+    <declare-styleable name="SympliTextView">
+        <attr name="fontPath" format="string" />
+
+        <!-- Inner shadow settings. -->
+        <attr name="innerShadowColor" format="color" />
+        <attr name="innerShadowDx" format="dimension" />
+        <attr name="innerShadowDy" format="dimension" />
+        <attr name="innerShadowRadius" format="dimension" />
+
+        <!-- Outer shadow settings. -->
+        <attr name="outerShadowColor" format="color" />
+        <attr name="outerShadowDx" format="dimension" />
+        <attr name="outerShadowDy" format="dimension" />
+        <attr name="outerShadowRadius" format="dimension" />
+    </declare-styleable>
+
+    <!-- Text View -->
+
+    <style name="base_text_view_style" parent="android:Widget.TextView">
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textStyle">normal</item>
+        <item name="android:gravity">left</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+
+    <style name="bottom_btn_text_view_style_bold_14sp">
+        <item name="fontPath">fonts/NunitoSans-Bold.ttf</item>
+        <item name="android:textColor">@color/spinner_button_color_selector</item>
+        <item name="android:textSize">@dimen/bottom_btn_text_view_size_14sp</item>
+    </style>
+
+    <style name="header_text_view_style_24sp" parent="base_text_view_style">
+        <item name="fontPath">fonts/NunitoSans-ExtraBold.ttf</item>
+        <item name="android:textSize">@dimen/header_text_view_size_24sp</item>
+    </style>
+
+    <style name="header_text_view_style_24sp_bold_allcaps" parent="base_text_view_style">
+        <item name="fontPath">fonts/NunitoSans-ExtraBold.ttf</item>
+        <item name="android:textSize">@dimen/header_text_view_size_24sp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textAllCaps">true</item>
+    </style>
+
+    <style name="header_text_view_style_48sp" parent="header_text_view_style_24sp">
+        <item name="android:textSize">@dimen/header_text_view_size_48sp</item>
+    </style>
+
+    <style name="header_text_view_style_48sp_mango_tango" parent="header_text_view_style_48sp">
+        <item name="android:textColor">@color/mango_tango</item>
+    </style>
+
+
+    <style name="header_description_text_view_style_sunset_orange_14sp" parent="base_text_view_style">
+        <item name="android:textColor">@color/sunset_orange</item>
+        <item name="android:textSize">@dimen/header_description_text_view_size_14sp</item>
+    </style>
+
+    <style name="header_description_white_text_view_style_12sp" parent="header_description_text_view_style_sunset_orange_14sp">
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textSize">@dimen/header_description_small_text_view_size_12sp</item>
+    </style>
+
+    <style name="header_description_white_text_view_style_10sp" parent="header_description_white_text_view_style_12sp">
+        <item name="android:textSize">@dimen/mixer_option_height_10sp</item>
+    </style>
+
+    <style name="header_description_white_text_view_style_8sp" parent="header_description_white_text_view_style_12sp">
+        <item name="android:textSize">@dimen/mixer_option_height_8sp</item>
+    </style>
+
+    <style name="header_description_mango_tango_text_view_style_12sp" parent="base_text_view_style">
+        <item name="android:textColor">@color/mango_tango</item>
+        <item name="android:textSize">@dimen/header_description_small_text_view_size_12sp</item>
+    </style>
+
+    <style name="header_description_sunset_orange_text_view_style_12sp" parent="header_description_text_view_style_sunset_orange_14sp">
+        <item name="android:textColor">@color/sunset_orange</item>
+        <item name="android:textSize">@dimen/header_description_small_text_view_size_12sp</item>
+    </style>
+
+    <style name="header_description_harvardcrimson_text_view_style_12sp" parent="header_description_text_view_style_sunset_orange_14sp">
+        <item name="android:textColor">@color/harvardcrimson</item>
+        <item name="android:textSize">@dimen/header_description_small_text_view_size_12sp</item>
+    </style>
+
+    <style name="header_online_text_view_style" parent="header_description_white_text_view_style_12sp">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">@dimen/background_text_height_small</item>
+        <item name="android:paddingTop">2dp</item>
+        <item name="android:paddingStart">@dimen/padding_text_small</item>
+        <item name="android:paddingEnd">@dimen/padding_text_small</item>
+    </style>
+
+
+    <style name="list_item_text_view_style_18sp" parent="base_text_view_style">
+        <item name="android:textSize">@dimen/list_item_text_view_size_18sp</item>
+    </style>
+
+    <style name="text_view_style_14sp_aed" parent="base_text_view_style">
+        <item name="android:textSize">@dimen/button_text_font_size_14sp</item>
+        <item name="android:paddingStart">@dimen/order_text_end_padding_4dp</item>
+        <item name="android:paddingTop">@dimen/margin_size_correction_2dp</item>
+    </style>
+
+    <style name="text_view_style_20sp" parent="base_text_view_style">
+        <item name="android:textSize">@dimen/edit_text_search_placeholder_text_view_size_20sp</item>
+    </style>
+
+    <style name="list_item_text_view_style_bold_18sp" parent="list_item_text_view_style_18sp">
+        <item name="fontPath">fonts/NunitoSans-Bold.ttf</item>
+        <!--<item name="android:textStyle">bold</item>-->
+    </style>
+
+    <style name="list_item_text_view_style_bold_24sp" parent="list_item_text_view_style_bold_18sp">
+        <item name="android:textSize">@dimen/header_text_view_size_24sp</item>
+    </style>
+
+    <style name="order_item_text_view_style_bold_14sp" parent="list_item_text_view_style_bold_18sp">
+        <item name="android:textSize">@dimen/list_item_description_text_view_size_14sp</item>
+        <!--<item name="android:textStyle">bold</item>-->
+        <item name="android:paddingEnd">@dimen/order_text_end_padding_4dp</item>
+    </style>
+
+    <style name="order_item_text_view_mango_tango_style_bold_14sp" parent="order_item_text_view_style_bold_14sp">
+        <item name="android:textColor">@color/mango_tango</item>
+    </style>
+
+
+    <style name="list_item_text_view_style_bold_42sp" parent="list_item_text_view_style_bold_18sp">
+        <item name="android:textSize">@dimen/text_time_to_collect_42sp</item>
+    </style>
+
+    <style name="list_item_text_view_style_bold_42sp_mango_tango" parent="list_item_text_view_style_bold_42sp">
+        <item name="android:textColor">@color/mango_tango</item>
+    </style>
+
+    <style name="list_item_text_view_style_mango_tango_bold_18sp" parent="list_item_text_view_style_bold_18sp">
+        <item name="android:textColor">@color/mango_tango</item>
+    </style>
+
+    <style name="list_item_text_view_style_manatee_bold_18sp" parent="list_item_text_view_style_bold_18sp">
+        <item name="android:textColor">@color/manatee</item>
+    </style>
+
+    <style name="list_item_text_view_mango_tango_style_18sp" parent="list_item_text_view_style_18sp">
+        <item name="android:textColor">@color/mango_tango</item>
+    </style>
+
+    <style name="list_item_text_view_18sp_sunset_orange" parent="list_item_text_view_style_18sp">
+        <item name="android:textColor">@color/sunset_orange</item>
+    </style>
+
+    <style name="list_item_description_white_text_view_style_14sp" parent="base_text_view_style">
+        <item name="android:textSize">@dimen/list_item_description_text_view_size_14sp</item>
+    </style>
+
+    <style name="text_view_style_white_14sp" parent="bottom_edit_text_style_20sp">
+        <item name="android:textSize">@dimen/list_item_description_text_view_size_14sp</item>
+    </style>
+
+    <style name="white_text_view_style_12sp" parent="base_text_view_style">
+        <item name="android:textSize">@dimen/input_text_font_size_12sp</item>
+    </style>
+
+    <style name="list_item_description_white_text_view_style_14sp_bold" parent="list_item_description_white_text_view_style_14sp">
+        <item name="fontPath">fonts/NunitoSans-Bold.ttf</item>
+    </style>
+
+    <style name="menu_item_white_text_view_style_18sp" parent="base_text_view_style">
+        <item name="android:textSize">@dimen/list_item_text_view_size_18sp</item>
+        <item name="android:layout_gravity">bottom</item>
+        <item name="android:layout_marginBottom">@dimen/padding_text_small</item>
+    </style>
+
+    <style name="list_item_description_text_view_manatee_style_14sp" parent="base_text_view_style">
+        <item name="android:textColor">@color/manatee</item>
+        <item name="android:textSize">@dimen/list_item_description_text_view_size_14sp</item>
+    </style>
+
+    <style name="list_item_description_text_view_manatee_style_12sp" parent="list_item_description_text_view_manatee_style_14sp">
+        <item name="android:textColor">@color/manatee</item>
+        <item name="android:textSize">@dimen/input_text_font_size_12sp</item>
+    </style>
+
+    <style name="list_item_description_mango_tango_text_view_style_14sp" parent="base_text_view_style">
+        <item name="android:textColor">@color/mango_tango</item>
+        <item name="android:textSize">@dimen/list_item_description_text_view_size_14sp</item>
+    </style>
+
+    <style name="list_item_description_mango_tango_text_view_style_24sp" parent="base_text_view_style">
+        <item name="android:textColor">@color/mango_tango</item>
+        <item name="android:textSize">@dimen/header_text_view_size_24sp</item>
+    </style>
+
+    <style name="order_description_text_view_style_14sp" parent="base_text_view_style">
+        <item name="android:textSize">@dimen/header_description_text_view_size_14sp</item>
+    </style>
+
+    <style name="order_description_text_view_style_mango_tango_14sp" parent="order_description_text_view_style_14sp">
+        <item name="android:textColor">@color/mango_tango</item>
+    </style>
+
+    <style name="order_description_text_view_style_sunset_orange_14sp" parent="order_description_text_view_style_14sp">
+        <item name="android:textColor">@color/sunset_orange</item>
+    </style>
+
+    <!-- Buttons -->
+
+    <style name="AppTheme.RoundedCornerMaterialButton" parent="Widget.AppCompat.Button.Colored">
+        <item name="android:background">@drawable/rounded_shape</item>
+    </style>
+
+    <style name="button_bottom_style_normal" parent="AppTheme.RoundedCornerMaterialButton">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textAllCaps">true</item>
+        <item name="fontPath">fonts/NunitoSans-Regular.ttf</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textSize">@dimen/bottom_btn_text_view_size_14sp</item>
+    </style>
+
+    <style name="button_bottom_style_bold" parent="button_bottom_style_normal">
+        <item name="fontPath">fonts/NunitoSans-Bold.ttf</item>
+<!--        <item name="android:textStyle">bold</item>-->
+    </style>
+
+    <style name="button_border_style_bold_regular_size" parent="button_bottom_style_bold">
+        <item name="android:background">@drawable/button_border</item>
+    </style>
+
+    <style name="button_border_style_bold" parent="button_border_style_bold_regular_size">
+        <item name="android:layout_height">@dimen/border_button_height</item>
+    </style>
+
+    <style name="button_border_style_bold_info" parent="button_border_style_bold">
+        <item name="android:layout_width">@dimen/info_button_16dp</item>
+        <item name="android:layout_height">@dimen/info_button_16dp</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textSize">@dimen/mixer_option_height_10sp</item>
+        <item name="android:textAlignment">center</item>
+        <item name="android:textAllCaps">false</item>
+        <item name="android:layout_marginLeft">@dimen/default_margin</item>
+        <item name="android:text">@string/btn_additional_info</item>
+        <item name="android:layout_gravity">center</item>
+    </style>
+
+    <style name="image_camera_info">
+        <item name="android:layout_width">@dimen/info_button_16dp</item>
+        <item name="android:layout_height">@dimen/info_button_16dp</item>
+        <item name="android:layout_marginLeft">@dimen/default_margin</item>
+        <item name="android:layout_gravity">center</item>
+    </style>
+
+    <style name="button_mango_tango_style_bold" parent="button_bottom_style_bold">
+        <!--<item name="android:background">@drawable/button_border</item>-->
+    </style>
+
+    <style name="spinner_button_style" parent="button_bottom_style_normal">
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textStyle">normal</item>
+        <item name="android:textAllCaps">false</item>
+        <item name="android:gravity">center|left</item>
+        <item name="android:paddingRight">@dimen/no_padding</item>
+        <item name="android:paddingLeft">@dimen/no_padding</item>
+        <item name="android:paddingTop">@dimen/default_margin_none</item>
+        <item name="android:paddingBottom">@dimen/default_margin_none</item>
+        <item name="android:background">?android:attr/selectableItemBackground</item>
+        <item name="android:textSize">@dimen/list_item_text_view_size_18sp</item>
+        <item name="android:lines">1</item>
+    </style>
+
+    <!-- ImageView -->
+
+    <style name="image_view_style">
+        <item name="android:layout_width">@dimen/image_view_width</item>
+        <item name="android:layout_height">@dimen/image_view_height</item>
+        <item name="android:layout_marginEnd">@dimen/image_view_end_margin</item>
+        <item name="android:layout_marginTop">@dimen/image_view_top_margin</item>
+        <item name="android:layout_marginBottom">@dimen/image_view_bottom_margin</item>
+    </style>
+
+    <style name="state_image_view_style">
+        <item name="android:layout_gravity">center_vertical</item>
+        <item name="android:layout_width">@dimen/state_image_view_size_32dp</item>
+        <item name="android:layout_height">@dimen/state_image_view_size_32dp</item>
+        <item name="android:layout_marginStart">@dimen/state_image_view_size_32dp</item>
+        <item name="android:layout_marginEnd">@dimen/state_image_view_margin_16dp</item>
+        <item name="android:layout_marginBottom">@dimen/state_image_view_margin_4dp</item>
+        <item name="android:layout_marginTop">@dimen/state_image_view_margin_4dp</item>
+    </style>
+
+    <style name="image_menu_item_style">
+        <item name="android:layout_width">@dimen/menu_item_width</item>
+        <item name="android:layout_height">@dimen/menu_item_height</item>
+        <item name="android:layout_marginEnd">@dimen/menu_item_end_margin</item>
+        <item name="android:layout_marginStart">@dimen/menu_item_start_margin</item>
+        <item name="android:layout_marginTop">@dimen/menu_item_top_margin</item>
+        <item name="android:layout_marginBottom">@dimen/menu_item_bottom_margin</item>
+    </style>
+
+    <!-- EditText -->
+    <style name="bottom_edit_text_style_20sp" parent="Widget.AppCompat.EditText">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+
+        <item name="android:textColorHint">@color/manatee</item>
+        <item name="android:textColor">@color/manatee</item>
+        <item name="android:textSize">@dimen/edit_text_search_placeholder_text_view_size_20sp</item>
+    </style>
+
+    <style name="SplashTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+    <style name="SplashTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+
+
+    <!-- View -->
+
+    <style name="header_border_style">
+        <item name="android:layout_height">@dimen/separation_line_2dp</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_marginTop">@dimen/default_margin</item>
+        <item name="android:background">@drawable/gradient</item>
+    </style>
+
+    <!-- Container -->
+
+    <style name="fragment_container_margins">
+        <item name="android:layout_marginStart">@dimen/list_margin_left_right</item>
+        <item name="android:layout_marginEnd">@dimen/list_margin_left_right</item>
+    </style>
+
+    <style name="fragment_container" parent="fragment_container_margins">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">match_parent</item>
+    </style>
+
+    <style name="list_item_border_white_style">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">@dimen/line_thickness</item>
+        <item name="android:layout_gravity">bottom</item>
+        <item name="android:background">@color/white</item>
+    </style>
+
+    <style name="list_item_border_style" parent="list_item_border_white_style">
+        <item name="android:background">@color/lightcharcoal</item>
+    </style>
+
+    <style name="list_item_border_spinner_style" parent="list_item_border_style">
+<!--        <item name="android:layout_marginStart">@dimen/default_margin</item>-->
+<!--        <item name="android:layout_marginEnd">@dimen/default_margin</item>-->
+    </style>
+
+
+    <style name="spinner_style" parent="Base.Widget.AppCompat.Spinner.Underlined">
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textStyle">normal</item>
+        <item name="android:gravity">left</item>
+        <item name="android:spinnerMode">dialog</item>
+        <item name="android:textSize">@dimen/list_item_text_view_size_18sp</item>
+    </style>
+
+
+    <style name="radio_group_button_options"  parent="Widget.AppCompat.CompoundButton.RadioButton">
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textSize">@dimen/list_item_text_view_size_18sp</item>
+    </style>
+
+    <style name="check_box_button_options"  parent="Widget.AppCompat.CompoundButton.CheckBox">
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textSize">@dimen/list_item_text_view_size_18sp</item>
+    </style>
+
+    <style name="toggle_button_mixer_option">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:minHeight">@dimen/mixer_option_height_24dp</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textSize">@dimen/mixer_option_height_10sp</item>
+        <item name="android:paddingLeft">@dimen/padding_8dp</item>
+        <item name="android:paddingRight">@dimen/padding_8dp</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:textAllCaps">false</item>
+        <item name="android:layout_marginRight">@dimen/default_margin</item>
+        <item name="android:background">@drawable/selector_drink_option</item>
+        <item name="android:layout_marginBottom">@dimen/default_margin</item>
+    </style>
+
+    <style name="toggle_radio_button_bold_14sp" parent="bottom_btn_text_view_style_bold_14sp">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:layout_marginBottom">@dimen/switch_button_border_margin</item>
+        <item name="android:layout_marginTop">@dimen/switch_button_border_margin</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:background">@drawable/switch_button_item_background</item>
+        <item name="android:button">@null</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textAllCaps">true</item>
+    </style>
+
+    <style name="single_toggle_radio_button_bold_14sp" parent="Widget.AppCompat.CompoundButton.Switch">
+        <item name="android:thumb">@color/transparent</item>
+        <item name="showText">false</item>
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_marginBottom">@dimen/switch_button_border_margin</item>
+        <item name="android:layout_marginTop">@dimen/switch_button_border_margin</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:button">@null</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textAllCaps">true</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:background">@drawable/single_switch_button_item_background</item>
+        <item name="android:layout_height">@dimen/button_add_drink_height_32dp</item>
+    </style>
+
+</resources>

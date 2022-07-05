@@ -1,0 +1,11 @@
+<!--
+  ~ Copyright (c) All rights reserved DrinkLink
+  -->
+
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android" >
+    <item android:drawable="@drawable/bkg_default" />
+    <item android:drawable="@drawable/logo_drinklink_full"
+        android:height="213dp"
+        android:width="177dp"
+        android:gravity="center"/>
+</layer-list>

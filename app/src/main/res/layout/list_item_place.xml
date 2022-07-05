@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/list_item"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal">
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/logo_place"
+        style="@style/image_view_style"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:layout_marginStart="@dimen/list_item_margin_start"
+        android:orientation="vertical">
+
+        <TextView
+            style="@style/list_item_text_view_style_18sp"
+            android:id="@+id/lbl_name"
+            tools:text="Place name"/>
+
+        <TextView
+            android:id="@+id/lbl_city"
+            style="@style/list_item_description_text_view_manatee_style_14sp"
+            tools:text="City name" />
+    </LinearLayout>
+
+</FrameLayout>

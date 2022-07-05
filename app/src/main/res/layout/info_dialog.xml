@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  ~ Copyright (c) All rights reserved DrinkLink
+  -->
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="@dimen/default_margin_2x"
+    android:background="@color/taupe">
+
+    <TextView
+        android:id="@+id/dialog_title"
+        android:layout_width="match_parent"
+        android:gravity="center"
+        android:layout_height="wrap_content"
+        android:textAllCaps="true"
+        style="@style/list_item_text_view_style_bold_18sp"
+        android:layout_marginBottom="@dimen/default_margin_2x"
+        tools:text="Add Mix"
+        android:text="Add Mix"/>
+
+    <TextView
+        android:id="@+id/dialog_message"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        style="@style/list_item_text_view_style_18sp"
+        android:gravity="center"
+        tools:text="Curabitur id enim vitae mauris dictum fringilla. Morbi at fermentum dui."
+        android:text="Curabitur id enim vitae mauris dictum fringilla. Morbi at fermentum dui."
+        />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btn_select"
+        android:layout_marginTop="@dimen/default_margin_2x"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/order_status_height_40dp"
+        style="@style/button_mango_tango_style_bold"
+        android:text="@string/btn_ok"
+        android:paddingLeft="@dimen/padding_16dp"
+        android:paddingRight="@dimen/padding_16dp"
+        android:layout_gravity="center"
+        android:backgroundTint="@color/sunset_orange"/>
+
+</LinearLayout>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  ~ Copyright (c) All rights reserved DrinkLink
+  -->
+
+<resources>
+    <attr name="dl_background" format="reference" />
+    <attr name="dl_background_light" format="reference" />
+</resources>

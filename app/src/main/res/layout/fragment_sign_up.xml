@@ -1,0 +1,221 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  ~ Copyright (c) All rights reserved DrinkLink
+  -->
+
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/darkcharcoal"
+        android:orientation="vertical"
+        android:focusableInTouchMode="true"
+        android:clickable="true"
+        android:focusable="true">
+
+        <TextView
+            style="@style/header_text_view_style_24sp_bold_allcaps"
+            android:text="@string/sign_up_header"
+            android:layout_marginEnd="@dimen/activity_horizontal_margin"
+            android:layout_marginStart="@dimen/activity_horizontal_margin"/>
+
+        <TextView
+            style="@style/header_description_sunset_orange_text_view_style_12sp"
+            android:text="@string/sign_up_description"
+            android:layout_marginEnd="@dimen/activity_horizontal_margin"
+            android:layout_marginStart="@dimen/activity_horizontal_margin"
+            android:layout_marginTop="@dimen/default_margin_4dp"
+            android:layout_marginBottom="@dimen/default_margin" />
+
+        <View style="@style/header_border_style"/>
+
+        <TextView
+            style="@style/list_item_description_white_text_view_style_14sp"
+            android:text="@string/sign_up_instructions"
+            android:layout_marginEnd="@dimen/activity_horizontal_margin"
+            android:layout_marginStart="@dimen/activity_horizontal_margin"
+            android:layout_marginTop="@dimen/default_margin_2x"
+            android:layout_marginBottom="@dimen/default_margin" />
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/no_size"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tv_signin_email"
+                style="@style/header_description_sunset_orange_text_view_style_12sp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/sign_in_padding"
+                android:text="@string/sign_in_mail"
+                android:layout_marginEnd="@dimen/activity_horizontal_margin"
+                android:layout_marginStart="@dimen/activity_horizontal_margin"
+                android:visibility="gone"
+                tools:visibility="gone"/>
+
+            <EditText
+                android:id="@+id/et_signin_email"
+                style="@style/bottom_edit_text_style_20sp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/default_margin_2x"
+                android:backgroundTint="@color/manatee"
+                android:layout_marginStart="@dimen/default_margin_2x_edit_text"
+                android:paddingStart="@dimen/padding_4dp"
+                android:layout_marginEnd="@dimen/activity_horizontal_margin"
+                android:inputType="textEmailAddress"
+                android:hint="@string/sign_in_mail" />
+
+            <TextView
+                android:id="@+id/tv_signin_password"
+                style="@style/header_description_sunset_orange_text_view_style_12sp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/default_margin"
+                android:text="@string/sign_in_password"
+                android:layout_marginEnd="@dimen/activity_horizontal_margin"
+                android:layout_marginStart="@dimen/activity_horizontal_margin"
+                android:visibility="gone"
+                tools:visibility="gone"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_gravity="top"
+                android:paddingRight="@dimen/padding_16dp">
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <EditText
+                        android:id="@+id/et_signin_password"
+                        style="@style/bottom_edit_text_style_20sp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="@dimen/default_margin"
+                        android:backgroundTint="@color/manatee"
+                        android:layout_marginEnd="@dimen/no_margin"
+                        android:layout_marginStart="@dimen/default_margin_2x_edit_text"
+                        android:paddingStart="@dimen/padding_4dp"
+                        android:hint="@string/sign_in_password"
+                        android:inputType="textPassword" />
+
+                    <TextView
+                        android:id="@+id/tv_signin_password_confirm"
+                        style="@style/header_description_sunset_orange_text_view_style_12sp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/default_margin"
+                        android:text="@string/sign_in_password_confirm"
+                        android:layout_marginEnd="@dimen/activity_horizontal_margin"
+                        android:layout_marginStart="@dimen/activity_horizontal_margin"
+                        android:visibility="gone"
+                        tools:visibility="gone"/>
+
+                    <EditText
+                        android:id="@+id/et_signin_password_confirm"
+                        style="@style/bottom_edit_text_style_20sp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="@dimen/default_margin"
+                        android:backgroundTint="@color/manatee"
+                        android:layout_marginEnd="@dimen/no_margin"
+                        android:layout_marginStart="@dimen/default_margin_2x_edit_text"
+                        android:paddingStart="@dimen/padding_4dp"
+                        android:hint="@string/sign_in_password_confirm"
+                        android:inputType="textPassword" />
+                </LinearLayout>
+
+                <FrameLayout
+                    android:id="@+id/btn_pwd_info_container"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:visibility="gone"
+                    android:padding="@dimen/padding_16dp">
+                    <androidx.appcompat.widget.AppCompatButton
+                        android:id="@+id/btn_pwd_info"
+                        style="@style/button_border_style_bold_info"
+                        android:layout_marginLeft="@dimen/no_margin"/>
+                </FrameLayout>
+
+            </LinearLayout>
+
+
+            <TextView
+                android:id="@+id/pwd_rules"
+                style="@style/white_text_view_style_12sp"
+                android:text="@string/password_requirements"
+                android:layout_marginEnd="@dimen/activity_horizontal_margin"
+                android:layout_marginStart="@dimen/activity_horizontal_margin"
+                android:layout_marginTop="@dimen/default_margin_4dp"
+                android:layout_marginBottom="@dimen/default_margin"
+                tools:visibility="visible"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="left|center_vertical">
+
+                <androidx.appcompat.widget.AppCompatCheckBox
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/check_box_option"
+                    android:layout_marginLeft="@dimen/default_margin_1_half"
+                    android:paddingLeft="@dimen/default_margin_1_half"
+                    android:paddingBottom="@dimen/default_margin_half"
+                    android:button="@drawable/check_box_button_options"
+                    tools:checked="true"
+                    style="@style/check_box_button_options"
+                    android:text=""
+                    android:textAlignment="center">
+                </androidx.appcompat.widget.AppCompatCheckBox>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/default_margin"
+                    style="@style/list_item_text_view_style_18sp"
+                    android:gravity="center"
+                    android:text="@string/terms_and_conditions_message_2rows"/>
+            </LinearLayout>
+
+
+            <TextView
+                android:id="@+id/sign_in_error"
+                style="@style/header_description_harvardcrimson_text_view_style_12sp"
+                android:text="@string/error_an_error"
+                android:layout_marginEnd="@dimen/activity_horizontal_margin"
+                android:layout_marginStart="@dimen/activity_horizontal_margin"
+                android:layout_marginTop="@dimen/default_margin_4dp"
+                android:layout_marginBottom="@dimen/default_margin"
+                android:visibility="gone"
+                tools:visibility="visible"/>
+
+        </LinearLayout>
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/button_sign_up"
+            style="@style/button_bottom_style_bold"
+            android:text="@string/button_sign_up"
+            android:layout_marginEnd="@dimen/activity_horizontal_margin"
+            android:layout_marginStart="@dimen/activity_horizontal_margin"
+            android:layout_marginTop="@dimen/default_margin"
+            android:layout_marginBottom="@dimen/default_margin_2x"
+            />
+
+    </LinearLayout>
+
+    <include layout="@layout/include_main_progress_bar"/>
+
+</FrameLayout>

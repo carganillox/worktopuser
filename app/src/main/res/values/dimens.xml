@@ -1,0 +1,111 @@
+<resources>
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+
+    <dimen name="bottom_btn_text_view_size_14sp">14.0sp</dimen>
+    <dimen name="header_text_view_size_24sp">24.0sp</dimen>
+    <dimen name="header_text_view_size_48sp">48.0sp</dimen>
+    <dimen name="header_description_text_view_size_14sp">14.0sp</dimen>
+    <dimen name="header_description_small_text_view_size_12sp">12.0sp</dimen>
+    <dimen name="list_item_text_view_size_18sp">18.0sp</dimen>
+    <dimen name="text_view_size_16sp">16.0sp</dimen>
+    <dimen name="list_item_description_text_view_size_14sp">14.0sp</dimen>
+    <dimen name="edit_text_search_placeholder_text_view_size_20sp">20.0sp</dimen>
+    <dimen name="text_time_to_collect_42sp">42.0sp</dimen>
+
+    <dimen name="image_view_width">48dp</dimen>
+    <dimen name="image_view_height">48dp</dimen>
+    <dimen name="image_view_end_margin">16dp</dimen>
+    <dimen name="image_view_top_margin">8dp</dimen>
+    <dimen name="image_view_bottom_margin">4dp</dimen>
+
+    <dimen name="state_image_view_size_32dp">32dp</dimen>
+    <dimen name="state_image_view_margin_20dp">20dp</dimen>
+    <dimen name="state_image_view_margin_16dp">16dp</dimen>
+    <dimen name="state_image_view_margin_4dp">4dp</dimen>
+
+    <dimen name="no_margin">0dp</dimen>
+    <dimen name="default_margin_4dp">4dp</dimen>
+    <dimen name="default_margin">8dp</dimen>
+    <dimen name="margin_negative_half">-4dp</dimen>
+    <dimen name="default_margin_10dp">10dp</dimen>
+    <dimen name="default_margin_2x">16dp</dimen>
+    <dimen name="default_margin_none">0dp</dimen>
+    <dimen name="default_margin_1_half">12dp</dimen>
+    <dimen name="default_margin_2x_edit_text">12dp</dimen>
+    <dimen name="default_margin_half">4dp</dimen>
+    <dimen name="default_padding_half">4dp</dimen>
+    <dimen name="default_margin_12dp">12dp</dimen>
+    <dimen name="margin_80dp">80dp</dimen>
+    <dimen name="list_margin_left_right">16dp</dimen>
+    <dimen name="button_corner_radius">8dp</dimen>
+    <dimen name="button_corner_radius_6dp">6dp</dimen>
+    <dimen name="button_corner_radius_16dp">16dp</dimen>
+    <dimen name="list_item_margin_start">56dp</dimen>
+    <dimen name="nav_header_vertical_spacing">16dp</dimen>
+    <dimen name="nav_header_height">160dp</dimen>
+    <dimen name="fab_margin">16dp</dimen>
+    <dimen name="padding_text_small">4dp</dimen>
+    <dimen name="switch_button_border_margin">4dp</dimen>
+
+    <dimen name="background_text_height_small">20dp</dimen>
+    <dimen name="category_left_margin_64dp">64dp</dimen>
+    <dimen name="slide_up_top">56dp</dimen>
+    <dimen name="line_thickness">1dp</dimen>
+    <dimen name="status_border_thickness">2dp</dimen>
+    <dimen name="border_button_height">32dp</dimen>
+    <dimen name="spinner_height">48dp</dimen>
+    <dimen name="spinner_height_44dp">44dp</dimen>
+    <dimen name="spinner_height_33dp">33dp</dimen>
+    <dimen name="action_bar_height">48dp</dimen>
+    <dimen name="order_line_margin_start_46dp">46dp</dimen>
+
+    <!--<dimen name="actionBarSize">48dp</dimen> ???? -->
+    <dimen name="status_item_height">56.0dp</dimen>
+    <dimen name="sub_category_height_68dp">68dp</dimen>
+    <dimen name="button_add_drink_height_32dp">32dp</dimen>
+    <dimen name="switch_height_48dp">48dp</dimen>
+    <dimen name="order_status_height_40dp">40dp</dimen>
+    <dimen name="category_height_64dp">64dp</dimen>
+
+    <dimen name="menu_item_width">24dp</dimen>
+    <dimen name="menu_item_height">24dp</dimen>
+    <dimen name="menu_item_top_margin">16dp</dimen>
+    <dimen name="menu_item_start_margin">16dp</dimen>
+    <dimen name="menu_item_end_margin">32dp</dimen>
+    <dimen name="menu_item_bottom_margin">8dp</dimen>
+    <dimen name="order_box_padding_12dp">12dp</dimen>
+
+    <dimen name="order_item_bottom_padding_4dp">4dp</dimen>
+    <dimen name="order_text_end_padding_4dp">2dp</dimen>
+    <dimen name="mixer_option_height_24dp">24dp</dimen>
+    <dimen name="mixer_option_height_10sp">10sp</dimen>
+    <dimen name="mixer_option_height_8sp">8sp</dimen>
+    <dimen name="button_corner_radius_4dp">4dp</dimen>
+    <dimen name="padding_8dp">8dp</dimen>
+    <dimen name="padding_2dp">2dp</dimen>
+    <dimen name="padding_6dp">6dp</dimen>
+    <dimen name="padding_4dp">4dp</dimen>
+    <dimen name="no_padding">0dp</dimen>
+    <dimen name="no_size">0dp</dimen>
+    <dimen name="padding_16dp">16dp</dimen>
+    <dimen name="padding_24dp">24dp</dimen>
+    <dimen name="scroll_4dp">4dp</dimen>
+    <dimen name="info_button_16dp">16dp</dimen>
+    <dimen name="payment_image_64dp">64dp</dimen>
+    <dimen name="payment_image_40dp">40dp</dimen>
+    <dimen name="payment_method_margin_12dp">12dp</dimen>
+    <dimen name="size_8dp">8dp</dimen>
+    <dimen name="separation_line_2dp">2dp</dimen>
+    <dimen name="ico_size_16dp">16dp</dimen>
+
+    <dimen name="proceed_to_payment_button_size">54dp</dimen>
+    <dimen name="pay_fragment_row_48dp">48dp</dimen>
+    <dimen name="margin_size_correction_1dp">1dp</dimen>
+    <dimen name="margin_size_correction_2dp">3dp</dimen>
+    <dimen name="sign_in_padding">24dp</dimen>
+    <dimen name="drink_photo_height">300dp</dimen>
+
+
+</resources>

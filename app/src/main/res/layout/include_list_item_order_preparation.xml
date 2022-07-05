@@ -1,0 +1,212 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  ~ Copyright (c) All rights reserved DrinkLink
+  -->
+
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:textAlignment="center"
+    android:padding="16dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <TextView
+            android:id="@+id/order_place"
+            style="@style/order_item_text_view_mango_tango_style_bold_14sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            tools:text="White Lounge"/>
+        <View android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:layout_width="0dp">
+        </View>
+        <TextView
+            android:id="@+id/order_date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            tools:text="12 Mar 2018"
+            style="@style/list_item_description_white_text_view_style_14sp"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            style="@style/order_item_text_view_style_bold_14sp"
+            android:text="@string/order_order"/>
+        <TextView
+            android:id="@+id/order_code"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            tools:text="A44"
+            style="@style/order_item_text_view_mango_tango_style_bold_14sp"/>
+        <TextView
+            android:id="@+id/order_items_count"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            style="@style/list_item_description_white_text_view_style_14sp"
+            tools:text="@string/order_items_count_format">
+        </TextView>
+        <View android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:layout_width="0dp">
+        </View>
+        <TextView
+            android:id="@+id/order_amount"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            style="@style/order_item_text_view_style_bold_14sp"
+            tools:text="8992.00"/>
+        <TextView
+            android:id="@+id/order_amount_aed"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            style="@style/order_item_text_view_style_bold_14sp"
+            android:text="@string/aed"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/order_status_container"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            style="@style/order_item_text_view_style_bold_14sp"
+            android:text="@string/order_status_label"/>
+        <View android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:layout_width="0dp">
+        </View>
+        <TextView
+            android:id="@+id/order_status"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            tools:text="A44"
+            style="@style/order_item_text_view_mango_tango_style_bold_14sp"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/order_time_to_collect_container"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            style="@style/order_item_text_view_style_bold_14sp"
+            android:text="@string/order_time_collect_before"/>
+        <View android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:layout_width="0dp">
+        </View>
+        <TextView
+            android:id="@+id/order_time_to_collect"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            tools:text="A44"
+            style="@style/order_item_text_view_mango_tango_style_bold_14sp"/>
+    </LinearLayout>
+    <TextView
+        android:id="@+id/table_delivery"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        style="@style/order_item_text_view_style_bold_14sp"
+        android:text="@string/order_table_delivery"/>
+
+    <TextView
+        android:id="@+id/order_pick_up"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        style="@style/order_item_text_view_mango_tango_style_bold_14sp"
+        android:layout_marginTop="@dimen/default_margin"
+        android:text="@string/order_pickup_label"/>
+
+    <LinearLayout
+        android:id="@+id/order_created_container"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginBottom="@dimen/order_item_bottom_padding_4dp">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            style="@style/order_item_text_view_style_bold_14sp"
+            android:text="@string/order_time_created"/>
+        <View android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:layout_width="0dp">
+        </View>
+        <TextView
+            android:id="@+id/order_created"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            tools:text="A44"
+            style="@style/order_item_text_view_mango_tango_style_bold_14sp"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/order_actions"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="@dimen/default_margin_2x"
+        android:layout_marginBottom="@dimen/order_item_bottom_padding_4dp">
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/button_view_order"
+            style="@style/button_border_style_bold"
+            android:layout_width="@dimen/no_size"
+            android:text="@string/button_view_order"
+            android:layout_weight="1"
+            android:layout_marginRight="@dimen/order_item_bottom_padding_4dp"
+            />
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/button_repeat_order"
+            style="@style/button_border_style_bold"
+            android:layout_width="@dimen/no_size"
+            android:text="@string/button_repeat_order"
+            android:layout_marginLeft="@dimen/order_item_bottom_padding_4dp"
+            android:layout_weight="1"
+            />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/order_actions2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="2"
+        android:gravity="center_horizontal"
+        android:layout_marginTop="@dimen/default_margin"
+        android:layout_marginBottom="@dimen/order_item_bottom_padding_4dp">
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/button_delete"
+            style="@style/button_border_style_bold"
+            android:layout_width="@dimen/no_size"
+            android:text="@string/button_delete_order"
+            android:layout_weight="1"
+            android:layout_marginRight="@dimen/order_item_bottom_padding_4dp"
+            />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/button_refund"
+            style="@style/button_border_style_bold"
+            android:layout_width="@dimen/no_size"
+            android:text="@string/button_refund_order"
+            android:layout_marginLeft="@dimen/order_item_bottom_padding_4dp"
+            android:layout_weight="1"
+            />
+    </LinearLayout>
+</LinearLayout>

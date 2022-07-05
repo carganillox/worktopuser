@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  ~ Copyright (c) All rights reserved DrinkLink
+  -->
+
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <include layout="@layout/include_place_header"/>
+
+        <com.sothree.slidinguppanel.SlidingUpPanelLayout
+            xmlns:sothree="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/sliding_layout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="bottom"
+            android:background="@color/charcoal"
+            sothree:umanoPanelHeight="@dimen/slide_up_top"
+            sothree:umanoShadowHeight="4dp">
+
+            <include layout="@layout/include_list_view"/>
+
+            <include layout="@layout/include_order_summary"/>
+
+        </com.sothree.slidinguppanel.SlidingUpPanelLayout>
+
+    </LinearLayout>
+
+    <include layout="@layout/include_main_progress_bar"/>
+
+</FrameLayout>

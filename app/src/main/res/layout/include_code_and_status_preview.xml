@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  ~ Copyright (c) All rights reserved DrinkLink
+  -->
+
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/container_order_summary"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/header_code_and_status_description"
+        style="@style/list_item_description_white_text_view_style_14sp_bold"
+        tools:text="White Lounge"
+        android:layout_marginEnd="@dimen/default_margin_2x"
+        android:layout_marginStart="@dimen/default_margin_2x"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginEnd="@dimen/default_margin_2x"
+        android:layout_marginStart="@dimen/default_margin_2x">
+
+        <TextView
+            style="@style/header_text_view_style_48sp"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:text="@string/code_and_status_code"
+            android:layout_marginEnd="@dimen/default_margin"
+            android:textAllCaps="true"/>
+
+        <TextView
+            android:id="@+id/header_code_letter"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            style="@style/header_text_view_style_48sp_mango_tango"
+            tools:text="A"
+            android:textAllCaps="true"/>
+
+        <TextView
+            android:id="@+id/header_code_number"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            style="@style/header_text_view_style_48sp"
+            tools:text="44"
+            android:textAllCaps="true"/>
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/header_barman"
+        style="@style/list_item_text_view_18sp_sunset_orange"
+        android:layout_below="@id/header_search"
+        tools:text="Barman1"
+        android:layout_marginEnd="@dimen/default_margin_2x"
+        android:layout_marginStart="@dimen/default_margin_2x"/>
+
+    <View style="@style/header_border_style"/>
+
+    <include layout="@layout/include_list_item_order_preparation"
+        android:paddingBottom="0dp"/>
+
+    <View style="@style/header_border_style" android:layout_marginTop="0dp"/>
+
+</LinearLayout>
+
+

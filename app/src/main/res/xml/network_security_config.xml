@@ -1,0 +1,7 @@
+<network-security-config>
+    <domain-config cleartextTrafficPermitted="true">
+        <domain includeSubdomains="true">drinklinkdev-001-site1.itempurl.com</domain>
+        <domain includeSubdomains="true">drinklink.aspifyhost.cz</domain>
+        <domain includeSubdomains="true">drinklink-preprod-be.azurewebsites.net</domain>
+    </domain-config>
+</network-security-config>

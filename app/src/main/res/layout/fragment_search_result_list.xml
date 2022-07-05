@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  ~ Copyright (c) All rights reserved DrinkLink
+  -->
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    style="@style/fragment_container">
+
+    <TextView
+        android:id="@+id/header_search"
+        style="@style/header_text_view_style_24sp"
+        android:gravity="top"
+        tools:text="Dubai Marine"
+        android:layout_marginBottom="@dimen/default_margin"/>
+
+    <TextView
+        android:id="@+id/header_search_description"
+        style="@style/header_description_text_view_style_sunset_orange_14sp"
+        android:layout_below="@id/header_search"
+        tools:text="23 results"
+        android:layout_marginBottom="@dimen/default_margin_2x"/>
+
+    <include layout="@layout/include_main_progress_bar"/>
+
+    <include layout="@layout/include_list_view"
+        android:layout_below="@id/header_search_description"
+        android:layout_above="@+id/edit_text_keyword"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="@dimen/default_margin_2x"/>
+
+</RelativeLayout>

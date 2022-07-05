@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="light_grey">#F2F2F2</color>
+    <color name="white">#FFFFFF</color>
+    <color name="black">#000000</color>
+    <color name="red">#FF0000</color>
+    <color name="transparent">#00000000</color>
+    <color name="dark_red">#AA0000</color>
+    <color name="blue">#4885ED</color>
+    <color name="dark_blue">#315A9F</color>
+
+    <color name="pay_sunset_orange">#f35a4e</color>
+    <color name="pay_mango_tango">#f6834a</color>
+    <color name="pay_manatee">#9b9b9b</color>
+    <color name="pay_charcoal">#2d3952</color>
+    <color name="pay_darkcharcoal">#263148</color>
+    <color name="pay_platinum">#e0e0e0</color>
+    <color name="pay_lightcharcoal">#3c4860</color>
+    <color name="pay_snow">#fafafa</color>
+    <color name="pay_timberwolf">#d8d8d8</color>
+    <color name="pay_harvardcrimson">#d0021b</color>
+    <color name="pay_olivedrab">#6a9a36</color>
+    <color name="pay_cadet">#535a6c</color>
+    <color name="pay_ruddy">#ff001f</color>
+    <color name="pay_mediumjunglegreen">#1d2638</color>
+    <color name="pay_oldlavender">#727272</color>
+    <color name="pay_ceruleanblue">#2a56c6</color>
+    <color name="pay_taupe">#333333</color>
+    <color name="pay_yellowgreen">#7ec42c</color>
+    <color name="pay_gold">#ffd700</color>
+
+</resources>

@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "1091987990913",
+    "firebase_url": "https://drinklink-40541.firebaseio.com",
+    "project_id": "drinklink-40541",
+    "storage_bucket": "drinklink-40541.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1091987990913:android:4ca33ea442f1914d",
+        "android_client_info": {
+          "package_name": "org.drinklink.app"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1091987990913-5krcmolq30a5pvlc91sb5l3obak38a0d.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "org.drinklink.app",
+            "certificate_hash": "6be88656d5c6ad49fd98e66e8e6d801211188f83"
+          }
+        },
+        {
+          "client_id": "1091987990913-k6c4g1j34e0rqa9g1l7pvgmtjoj9o715.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDyDZUCV7PnJjfbERnGWGdpI6IExL-K1Dg"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1091987990913-k6c4g1j34e0rqa9g1l7pvgmtjoj9o715.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

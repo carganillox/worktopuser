@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  ~ Copyright (c) All rights reserved DrinkLink
+  -->
+
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <include layout="@layout/include_code_and_status_preview"/>
+
+    <include layout="@layout/include_list_view"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"/>
+
+    <LinearLayout
+        android:id="@+id/order_actions"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_margin="@dimen/default_margin_2x">
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/button_preview_delete"
+            style="@style/button_border_style_bold_regular_size"
+            android:layout_width="@dimen/no_size"
+            android:text="@string/button_delete_order"
+            android:layout_weight="100"
+            android:layout_marginRight="@dimen/default_margin"
+            />
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/button_repeat_order_preview"
+            style="@style/button_bottom_style_bold"
+            android:layout_width="@dimen/no_size"
+            android:text="@string/button_repeat_order"
+            android:layout_marginLeft="@dimen/default_margin"
+            android:layout_weight="161"
+            />
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  ~ Copyright (c) All rights reserved DrinkLink
+  -->
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/list_item"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:textAlignment="center"
+    android:background="@drawable/rounded_shape_charcoal"
+    android:layout_marginTop="@dimen/default_margin_2x">
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/indicator_stripe"
+        android:layout_width="@dimen/size_8dp"
+        android:layout_height="match_parent"
+        android:background="@drawable/left_rounded_shaple"
+        android:backgroundTint="@color/yellow"/>
+
+    <include layout="@layout/include_list_item_order_preparation"/>
+
+</LinearLayout>

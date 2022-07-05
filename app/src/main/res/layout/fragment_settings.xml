@@ -1,0 +1,272 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  ~ Copyright (c) All rights reserved DrinkLink
+  -->
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/darkcharcoal"
+        android:orientation="vertical"
+        android:focusableInTouchMode="true"
+        android:clickable="true"
+        android:focusable="true">
+
+        <TextView
+            style="@style/header_text_view_style_24sp_bold_allcaps"
+            android:text="@string/settings"
+            android:layout_marginEnd="@dimen/activity_horizontal_margin"
+            android:layout_marginStart="@dimen/activity_horizontal_margin"/>
+
+        <TextView
+            style="@style/header_description_sunset_orange_text_view_style_12sp"
+            android:text="@string/customize_settings"
+            android:layout_marginEnd="@dimen/activity_horizontal_margin"
+            android:layout_marginStart="@dimen/activity_horizontal_margin"
+            android:layout_marginTop="@dimen/default_margin_4dp"
+            android:layout_marginBottom="@dimen/default_margin" />
+
+        <View style="@style/header_border_style"/>
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scrollbarSize="@dimen/no_size">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="@dimen/activity_horizontal_margin"
+                android:layout_marginStart="@dimen/activity_horizontal_margin"
+                android:orientation="vertical">
+
+                <TextView
+                    style="@style/list_item_text_view_18sp_sunset_orange"
+                    android:text="@string/settings_your_cards"
+                    android:layout_marginTop="@dimen/default_margin_2x"
+                    android:layout_marginBottom="@dimen/default_margin_2x"/>
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/list_credit_cards"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+                    tools:visibility="gone"/>
+
+
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/btn_add_card"
+                    style="@style/button_border_style_bold"
+                    android:layout_marginTop="@dimen/default_margin_2x"
+                    android:layout_marginBottom="@dimen/default_margin"
+                    android:text="@string/btn_add_new_card"/>
+
+                <TextView
+                    style="@style/list_item_text_view_18sp_sunset_orange"
+                    android:text="@string/settings_default_message_sound"
+                    android:layout_marginTop="@dimen/default_margin_2x"/>
+
+                <TextView
+                    style="@style/order_description_text_view_style_14sp"
+                    android:text="@string/settings_default_message_sound_desc"
+                    android:layout_marginTop="@dimen/default_margin" />
+
+                <RadioGroup
+                    android:id="@+id/rg_message_sound"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/switch_height_48dp"
+                    android:layout_marginBottom="@dimen/default_margin"
+                    android:layout_marginTop="@dimen/default_margin"
+                    android:background="@drawable/switch_group_background"
+                    android:checkedButton="@+id/offer"
+                    android:orientation="horizontal">
+
+                    <androidx.appcompat.widget.AppCompatRadioButton
+                        android:id="@+id/rg_message_sound_on"
+                        style="@style/toggle_radio_button_bold_14sp"
+                        android:layout_marginLeft="@dimen/switch_button_border_margin"
+                        android:text="@string/on"
+                        tools:checked="true" />
+
+                    <androidx.appcompat.widget.AppCompatRadioButton
+                        android:id="@+id/rg_message_sound_off"
+                        style="@style/toggle_radio_button_bold_14sp"
+                        android:layout_marginRight="@dimen/switch_button_border_margin"
+                        android:text="@string/off"
+                        tools:checked="false" />
+                </RadioGroup>
+
+                <TextView
+                    style="@style/list_item_text_view_18sp_sunset_orange"
+                    android:text="@string/settings_default_ring_for_ready"
+                    android:layout_marginTop="@dimen/default_margin_2x" />
+
+                <RadioGroup
+                    android:id="@+id/rg_ring_for_order"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/switch_height_48dp"
+                    android:layout_marginBottom="@dimen/default_margin_2x"
+                    android:layout_marginTop="@dimen/default_margin"
+                    android:background="@drawable/switch_group_background"
+                    android:checkedButton="@+id/offer"
+                    android:orientation="horizontal">
+
+                    <RadioButton
+                        android:id="@+id/rg_ring_for_order_on"
+                        style="@style/toggle_radio_button_bold_14sp"
+                        tools:checked="true"
+                        android:layout_marginLeft="@dimen/switch_button_border_margin"
+                        android:text="@string/on"/>
+
+                    <RadioButton
+                        android:id="@+id/rg_ring_for_order_off"
+                        style="@style/toggle_radio_button_bold_14sp"
+                        tools:checked="false"
+                        android:layout_marginRight="@dimen/switch_button_border_margin"
+                        android:text="@string/off"/>
+                </RadioGroup>
+
+                <TextView
+                    android:id="@+id/tv_bill_email"
+                    style="@style/header_description_sunset_orange_text_view_style_12sp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/default_margin"
+                    android:layout_marginStart="@dimen/default_margin_4dp"
+                    android:text="@string/bill_to_email"
+                    android:visibility="gone"
+                    tools:visibility="visible"/>
+
+                <EditText
+                    android:id="@+id/et_bill_email"
+                    style="@style/bottom_edit_text_style_20sp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/default_margin"
+                    android:backgroundTint="@color/manatee"
+                    android:paddingStart="@dimen/padding_4dp"
+                    android:inputType="textEmailAddress"
+                    android:hint="@string/bill_to_email" />
+
+                <androidx.appcompat.widget.AppCompatCheckBox
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/check_box_bill_to_cardholder"
+                    android:paddingLeft="@dimen/default_margin_1_half"
+                    android:paddingBottom="@dimen/default_margin_half"
+                    android:layout_marginTop="@dimen/default_margin"
+                    android:button="@drawable/check_box_button_options"
+                    android:layout_marginLeft="@dimen/default_margin_4dp"
+                    tools:checked="true"
+                    style="@style/check_box_button_options"
+                    android:text="@string/check_box_bill_to_cardholder"
+                    android:gravity="center_vertical">
+                </androidx.appcompat.widget.AppCompatCheckBox>
+
+                <TextView
+                    android:id="@+id/tv_bill_first_name"
+                    style="@style/header_description_sunset_orange_text_view_style_12sp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/default_margin"
+                    android:layout_marginStart="@dimen/default_margin_4dp"
+                    android:text="@string/bill_to_first_name"
+                    android:visibility="gone"
+                    tools:visibility="visible" />
+
+                <EditText
+                    android:id="@+id/et_bill_first_name"
+                    style="@style/bottom_edit_text_style_20sp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/default_margin"
+                    android:backgroundTint="@color/manatee"
+                    android:paddingStart="@dimen/padding_4dp"
+                    android:hint="@string/bill_to_first_name"
+                    android:inputType="textCapWords"/>
+
+                <TextView
+                    android:id="@+id/tv_bill_last_name"
+                    style="@style/header_description_sunset_orange_text_view_style_12sp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/default_margin_4dp"
+                    android:layout_marginTop="@dimen/default_margin"
+                    android:text="@string/bill_to_last_name"
+                    android:visibility="gone"
+                    tools:visibility="visible"/>
+
+                <EditText
+                    android:id="@+id/et_bill_last_name"
+                    style="@style/bottom_edit_text_style_20sp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/default_margin"
+                    android:backgroundTint="@color/manatee"
+                    android:paddingStart="@dimen/padding_4dp"
+                    android:hint="@string/bill_to_last_name"
+                    android:inputType="textCapWords"/>
+
+                <LinearLayout
+                    android:id="@+id/tv_bill_address"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:visibility="gone">
+                    <TextView
+                        style="@style/header_description_sunset_orange_text_view_style_12sp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/default_margin"
+                        android:layout_marginEnd="@dimen/default_margin"
+                        android:layout_marginTop="@dimen/default_margin"
+                        android:text="@string/bill_to_address"
+                        tools:visibility="visible"/>
+                    <TextView
+                        style="@style/header_text_view_style_24sp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/default_margin"
+                        android:text=","
+                        tools:visibility="visible"/>
+                    <TextView
+                        style="@style/header_description_sunset_orange_text_view_style_12sp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/default_margin"
+                        android:layout_marginEnd="@dimen/default_margin_2x"
+                        android:layout_marginTop="@dimen/default_margin"
+                        android:text=")"
+                        tools:visibility="visible"/>
+                </LinearLayout>
+
+
+                <EditText
+                    android:id="@+id/et_bill_address"
+                    style="@style/bottom_edit_text_style_20sp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/default_margin"
+                    android:backgroundTint="@color/manatee"
+                    android:paddingStart="@dimen/padding_4dp"
+                    android:hint="@string/bill_to_address_hint"
+                    android:inputType="textCapWords"/>
+
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/button_apply_settings"
+                    style="@style/button_bottom_style_bold"
+                    android:text="@string/settings_button_apply"
+                    android:layout_marginTop="@dimen/default_margin"
+                    android:layout_marginBottom="@dimen/default_margin_2x" />
+            </LinearLayout>
+
+        </ScrollView>
+    </LinearLayout>
+
+    <include layout="@layout/include_main_progress_bar"/>
+</FrameLayout>

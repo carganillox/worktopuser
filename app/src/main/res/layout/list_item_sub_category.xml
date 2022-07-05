@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  ~ Copyright (c) All rights reserved DrinkLink
+  -->
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/list_item"
+    android:minHeight="@dimen/category_height_64dp"
+    android:layout_height="wrap_content"
+    android:layout_width="match_parent"
+    android:background="@color/darkcharcoal"
+    android:layout_marginStart="@dimen/default_margin_2x"
+    android:textAlignment="center"
+    android:gravity="center_vertical"
+    android:orientation="horizontal">
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/logo_drink_category"
+        android:layout_width="32dp"
+        android:layout_height="32dp"
+        android:layout_marginStart="@dimen/default_margin_2x"
+        android:layout_marginEnd="@dimen/default_margin"
+        android:layout_marginTop="@dimen/default_margin"
+        android:layout_marginBottom="@dimen/default_margin"
+        android:layout_gravity="center_vertical"
+        app:srcCompat="@drawable/ico_drinks_water"/>
+
+    <TextView
+        android:id="@+id/lbl_name"
+        android:layout_gravity="center_vertical|left"
+        android:layout_marginStart="@dimen/default_margin"
+        tools:text="Place name"
+        style="@style/list_item_description_white_text_view_style_14sp"
+        android:layout_width="0dp"
+        android:layout_weight="1"/>
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/next_sub_categories"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/ico_arrow_right"
+        android:layout_marginRight="@dimen/default_margin_2x"
+        android:layout_marginLeft="@dimen/default_margin"
+        android:layout_gravity="center_vertical|right"/>
+
+</LinearLayout>

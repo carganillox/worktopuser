@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  ~ Copyright (c) All rights reserved DrinkLink
+  -->
+<ToggleButton
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/list_item"
+    tools:checked="true"
+    android:gravity="center_vertical"
+    android:textOff="@string/option_add_mix"
+    android:textOn="@string/option_with_mixer"
+    android:background="@color/transparent"
+    android:paddingLeft="@dimen/padding_8dp"
+    style="@style/toggle_button_mixer_option"/>
+
+    <!--android:drawableLeft="@drawable/ic_ice_cubes"-->

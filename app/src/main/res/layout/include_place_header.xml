@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  ~ Copyright (c) All rights reserved DrinkLink
+  -->
+
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/container_order_summary"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/header_place_menu_description"
+        style="@style/header_description_text_view_style_sunset_orange_14sp"
+        android:layout_below="@id/header_search"
+        tools:text="Dubai World Trade Center"
+        android:layout_marginEnd="@dimen/activity_horizontal_margin"
+        android:layout_marginStart="@dimen/activity_horizontal_margin"/>
+
+    <TextView
+        android:id="@+id/header_place_menu"
+        style="@style/header_text_view_style_24sp"
+        android:gravity="top"
+        tools:text="Arab Innovation Lounge"
+        android:layout_marginEnd="@dimen/activity_horizontal_margin"
+        android:layout_marginStart="@dimen/activity_horizontal_margin"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="@dimen/activity_horizontal_margin"
+        android:layout_marginStart="@dimen/activity_horizontal_margin"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/header_place_menu_working_hours"
+            style="@style/header_description_white_text_view_style_12sp"
+            android:layout_below="@id/header_search"
+            tools:text="Working hours 9 pm - 4 am"
+            tools:visibility="gone"
+            android:layout_weight="1"/>
+
+        <TextView
+            android:id="@+id/header_avg_preparation"
+            style="@style/header_description_sunset_orange_text_view_style_12sp"
+            android:layout_below="@id/header_search"
+            tools:text="Average preparation time 10 min"
+            android:layout_weight="1"
+            android:visibility="gone"
+            tools:visibility="visible"/>
+
+        <TextView
+            android:id="@+id/header_is_not_working"
+            style="@style/header_online_text_view_style"
+            android:text="@string/offline"
+            tools:visibility="visible"
+            android:background="@color/harvardcrimson"
+            android:visibility="gone"/>
+
+        <TextView
+            android:id="@+id/header_is_working"
+            style="@style/header_online_text_view_style"
+            android:text="@string/online"
+            tools:text="@string/online"
+            tools:visibility="visible"
+            android:background="@color/olivedrab"
+            android:visibility="gone"/>
+
+    </LinearLayout>
+
+    <View style="@style/header_border_style"/>
+
+</LinearLayout>
+
+

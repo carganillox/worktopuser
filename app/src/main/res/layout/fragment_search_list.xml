@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  ~ Copyright (c) All rights reserved DrinkLink
+  -->
+
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginStart="@dimen/list_margin_left_right"
+    android:layout_marginEnd="@dimen/list_margin_left_right">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/header_search"
+            style="@style/header_text_view_style_24sp"
+            android:gravity="top"
+            android:text="@string/header_search"
+            android:layout_marginBottom="@dimen/default_margin"/>
+
+        <TextView
+            android:id="@+id/header_search_description"
+            style="@style/header_description_text_view_style_sunset_orange_14sp"
+            android:text="@string/header_search_description"
+            android:layout_marginBottom="@dimen/default_margin_2x"/>
+
+        <include layout="@layout/include_list_view"
+            android:layout_below="@id/header_search_description"
+            android:layout_above="@+id/edit_text_keyword"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"/>
+
+        <TextView
+            android:id="@+id/text_view_keyword"
+            android:layout_above="@id/edit_text_keyword"
+            style="@style/header_description_mango_tango_text_view_style_12sp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/input_search_placeholder"
+            android:layout_marginTop="@dimen/default_margin"
+            android:visibility="gone"/>
+
+        <androidx.appcompat.widget.AppCompatEditText
+            android:id="@+id/edit_text_keyword"
+            android:layout_above="@id/button_search"
+            android:backgroundTint="@color/manatee"
+            style="@style/bottom_edit_text_style_20sp"
+            android:layout_marginTop="@dimen/default_margin"
+            android:layout_marginBottom="@dimen/default_margin"
+            android:hint="@string/input_search_placeholder"
+            />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/button_search"
+            android:layout_alignParentBottom="true"
+            style="@style/button_bottom_style_bold"
+            android:text="@string/search_button"
+            android:layout_marginTop="@dimen/default_margin"
+            android:layout_marginBottom="@dimen/default_margin_2x"/>
+
+    </LinearLayout>
+
+    <include layout="@layout/include_main_progress_bar"/>
+
+</FrameLayout>

@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  ~ Copyright (c) All rights reserved DrinkLink
+  -->
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center_vertical"
+    android:orientation="vertical"
+    android:background="@drawable/rounded_shape_charcoal"
+    android:layout_marginTop="@dimen/default_margin"
+    android:layout_marginStart="@dimen/default_margin_2x"
+    android:layout_marginEnd="@dimen/default_margin_2x"
+    android:layout_marginBottom="@dimen/default_margin"
+    android:padding="@dimen/order_box_padding_12dp"
+    android:clickable="true">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/order_item_bottom_padding_4dp">
+        <TextView
+            android:id="@+id/order_place"
+            style="@style/order_item_text_view_mango_tango_style_bold_14sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            tools:text="White Lounge"/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginBottom="@dimen/order_item_bottom_padding_4dp">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            style="@style/order_item_text_view_style_bold_14sp"
+            android:text="@string/order_order"/>
+        <TextView
+            android:id="@+id/order_code_letter"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            tools:text="A"
+            style="@style/order_item_text_view_style_bold_14sp"
+            android:paddingEnd="@dimen/no_padding"/>
+        <TextView
+            android:id="@+id/order_code_number"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            tools:text="44"
+            style="@style/order_item_text_view_mango_tango_style_bold_14sp"/>
+        <TextView
+            android:id="@+id/order_items_count"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            style="@style/list_item_description_white_text_view_style_14sp"
+            tools:text="@string/order_items_count_format">
+        </TextView>
+        <View android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:layout_width="0dp">
+        </View>
+        <TextView
+            android:id="@+id/order_amount"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            style="@style/order_item_text_view_style_bold_14sp"
+            tools:text="8992.00 AED"/>
+        <TextView
+            android:id="@+id/order_amount_aed"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            style="@style/order_item_text_view_style_bold_14sp"
+            android:text="@string/aed"/>
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/order_time_to_collect_container"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginBottom="@dimen/order_item_bottom_padding_4dp">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            style="@style/order_item_text_view_style_bold_14sp"
+            android:text="@string/order_time_collect_before"/>
+        <View android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:layout_width="0dp">
+        </View>
+        <TextView
+            android:id="@+id/order_time_to_collect"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            tools:text="A44"
+            style="@style/order_item_text_view_mango_tango_style_bold_14sp"/>
+    </LinearLayout>
+    <TextView
+        android:id="@+id/table_delivery"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        style="@style/order_item_text_view_style_bold_14sp"
+        android:text="@string/order_table_delivery"/>
+    <LinearLayout
+        android:id="@+id/order_status_container"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/order_item_bottom_padding_4dp"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            style="@style/order_item_text_view_style_bold_14sp"
+            android:text="@string/order_status_label"/>
+        <View android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:layout_width="0dp">
+        </View>
+        <TextView
+            android:id="@+id/order_status"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            tools:text="A44"
+            style="@style/order_item_text_view_mango_tango_style_bold_14sp"/>
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/order_pick_up"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        style="@style/order_item_text_view_mango_tango_style_bold_14sp"
+        android:layout_marginBottom="@dimen/order_item_bottom_padding_4dp"
+        android:text="@string/order_pickup_label"/>
+
+    <LinearLayout
+        android:id="@+id/order_created_container"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginBottom="@dimen/order_item_bottom_padding_4dp">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            style="@style/order_item_text_view_style_bold_14sp"
+            android:text="@string/order_time_created"/>
+        <View android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:layout_width="0dp">
+        </View>
+        <TextView
+            android:id="@+id/order_created"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            tools:text="A44"
+            style="@style/order_item_text_view_mango_tango_style_bold_14sp"/>
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,18 @@
+<!--
+  ~ Copyright (c) All rights reserved DrinkLink
+  -->
+
+<shape
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:shape="rectangle">
+    <gradient
+        android:startColor="@color/sunset_orange"
+        android:endColor="@color/mango_tango"
+        android:angle="0" />
+
+    <corners
+        android:topLeftRadius="@dimen/default_margin"
+        android:topRightRadius="@dimen/default_margin">
+    </corners>
+
+</shape>

@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  ~ Copyright (c) All rights reserved DrinkLink
+  -->
+
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/container_order_summary"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/header_code_and_status_description"
+        style="@style/list_item_description_white_text_view_style_14sp_bold"
+        tools:text="White Lounge"
+        android:layout_marginEnd="@dimen/default_margin_2x"
+        android:layout_marginStart="@dimen/default_margin_2x"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginEnd="@dimen/default_margin_2x"
+        android:layout_marginStart="@dimen/default_margin_2x">
+
+        <TextView
+            style="@style/header_text_view_style_24sp"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:text="@string/code_and_status_code"
+            android:layout_marginEnd="@dimen/default_margin"
+            android:textAllCaps="true"/>
+
+        <TextView
+            android:id="@+id/header_code_letter"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            style="@style/header_text_view_style_48sp_mango_tango"
+            tools:text="A"
+            android:textAllCaps="true"/>
+
+        <TextView
+            android:id="@+id/header_code_number"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            style="@style/header_text_view_style_48sp"
+            tools:text="44"
+            android:textAllCaps="true"/>
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/header_barman"
+        style="@style/list_item_text_view_18sp_sunset_orange"
+        android:layout_below="@id/header_search"
+        tools:text="Barman1"
+        android:layout_marginEnd="@dimen/default_margin_2x"
+        android:layout_marginStart="@dimen/default_margin_2x"/>
+
+    <View style="@style/header_border_style"/>
+
+    <LinearLayout
+        android:id="@+id/time_to_collect_container"
+        android:layout_marginEnd="@dimen/default_margin_2x"
+        android:layout_marginStart="@dimen/default_margin_2x"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginBottom="@dimen/default_margin_half"
+        android:visibility="visible"
+        tools:visibility="visible">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/default_margin"
+            android:layout_marginBottom="@dimen/default_margin"
+            android:layout_gravity="center_vertical"
+            android:orientation="vertical">
+
+            <TextView
+                style="@style/list_item_text_view_style_bold_18sp"
+                android:layout_below="@id/header_search"
+                android:text="@string/status_time_to_collect"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAllCaps="true"
+                />
+
+            <TextView
+                android:id="@+id/prepared_by"
+                android:text="@string/status_prepared_by"
+                style="@style/order_description_text_view_style_14sp"
+                tools:text="Prepared by: Barman1"
+                />
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/time_to_collect"
+            style="@style/list_item_text_view_style_bold_42sp_mango_tango"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            tools:visibility="visible"
+            tools:text="19:59"/>
+
+        <TextView
+            android:id="@+id/time_to_collect_min"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            style="@style/list_item_text_view_style_bold_18sp"
+            android:gravity="end|center_vertical"
+            android:text="min"
+            tools:visibility="visible">
+        </TextView>
+
+        <TextView
+            android:id="@+id/time_to_collect_message"
+            style="@style/list_item_text_view_style_bold_18sp"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:textAlignment="center"
+            android:gravity="center"
+            tools:text="Expired"
+            tools:visibility="gone"
+            android:visibility="gone"
+            android:layout_marginLeft="0dp"
+            android:text=""/>
+
+    </LinearLayout>
+
+    <View android:id="@+id/time_to_collect_margin"
+        android:layout_height="@dimen/default_margin_2x"
+        android:layout_width="match_parent" />
+
+    <TextView
+        android:id="@+id/discount_message"
+        android:background="@color/mango_tango"
+        style="@style/order_item_text_view_style_bold_14sp"
+        android:paddingTop="@dimen/padding_8dp"
+        android:paddingBottom="@dimen/padding_8dp"
+        android:paddingStart="@dimen/padding_24dp"
+        android:paddingEnd="@dimen/padding_24dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAlignment="center"
+        android:text="@string/code_and_status_present_code"
+        android:layout_marginEnd="@dimen/default_margin_2x"
+        android:layout_marginStart="@dimen/default_margin_2x"
+        android:layout_marginBottom="@dimen/default_margin"
+        />
+
+    <TextView
+        android:id="@+id/discount_info"
+        style="@style/header_text_view_style_24sp"
+        android:paddingTop="@dimen/padding_8dp"
+        android:paddingBottom="@dimen/padding_8dp"
+        android:paddingStart="@dimen/padding_24dp"
+        android:paddingEnd="@dimen/padding_24dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAlignment="center"
+        tools:text="Premium Discount, 50%"
+        android:layout_marginEnd="@dimen/default_margin_2x"
+        android:layout_marginStart="@dimen/default_margin_2x"
+        android:layout_marginBottom="@dimen/default_margin"
+        />
+
+    <View style="@style/header_border_style"
+        android:id="@+id/discount_border"/>
+
+</LinearLayout>
+
+

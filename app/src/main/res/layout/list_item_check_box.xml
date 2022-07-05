@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  ~ Copyright (c) All rights reserved DrinkLink
+  -->
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="@dimen/default_margin"
+    android:layout_marginStart="@dimen/no_margin"
+    android:layout_marginEnd="@dimen/default_margin"
+    android:orientation="horizontal">
+
+    <androidx.appcompat.widget.AppCompatCheckBox
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:layout_height="wrap_content"
+        android:id="@+id/check_box_option"
+        android:layout_marginLeft="@dimen/margin_negative_half"
+        tools:text="option is much longer than it can fit into one line  and then asdfdsfsdfsdfasfdsadf"
+        android:paddingBottom="@dimen/default_margin_half"
+        android:buttonTint="@color/white"
+        tools:checked="true"
+        style="@style/check_box_button_options">
+    </androidx.appcompat.widget.AppCompatCheckBox>
+
+    <TextView
+        android:id="@+id/radio_addition"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        style="@style/list_item_description_white_text_view_style_14sp"
+        tools:text="(99,00 AED)"
+        />
+</LinearLayout>
+

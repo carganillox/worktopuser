@@ -1,0 +1,15 @@
+<!--
+  ~ Copyright (c) All rights reserved DrinkLink
+  -->
+
+<shape
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:shape="rectangle">
+
+    <solid android:color="@color/cadet" />
+
+    <corners
+        android:radius="@dimen/default_margin">
+    </corners>
+
+</shape>

@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  ~ Copyright (c) All rights reserved DrinkLink
+  -->
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="@dimen/default_margin_2x"
+    android:background="@color/taupe">
+
+    <TextView
+        android:id="@+id/dialog_title"
+        android:layout_width="match_parent"
+        android:gravity="center"
+        android:layout_height="wrap_content"
+        android:textAllCaps="true"
+        style="@style/list_item_text_view_style_bold_18sp"
+        android:layout_marginBottom="@dimen/default_margin_2x"
+        tools:text="Add Mix"
+        android:text="Add Mix"/>
+
+    <TextView
+        android:id="@+id/dialog_message"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        style="@style/list_item_text_view_style_18sp"
+        android:gravity="center"
+        tools:text="Curabitur id enim vitae mauris dictum fringilla. Morbi at fermentum dui."
+        android:text="Curabitur id enim vitae mauris dictum fringilla. Morbi at fermentum dui."
+        />
+
+    <EditText
+        android:id="@+id/dialog_input"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:lines="3"
+        style="@style/bottom_edit_text_style_20sp"
+        android:layout_marginEnd="@dimen/default_margin"
+        android:backgroundTint="@color/manatee"
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/default_margin">
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btn_cancel"
+            android:layout_width="0dp"
+            android:layout_weight="100"
+            android:layout_height="@dimen/order_status_height_40dp"
+            style="@style/button_mango_tango_style_bold"
+            android:text="@string/btn_cancel"
+            android:backgroundTint="@color/charcoal"
+            android:layout_marginRight="@dimen/default_margin_half"/>
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btn_select"
+            android:layout_width="0dp"
+            android:layout_weight="161"
+            android:layout_marginLeft="@dimen/default_margin_half"
+            android:layout_height="@dimen/order_status_height_40dp"
+            style="@style/button_mango_tango_style_bold"
+            android:text="@string/btn_send"
+            android:backgroundTint="@color/sunset_orange"/>
+
+    </LinearLayout>
+
+</LinearLayout>
